@@ -299,7 +299,7 @@ data DocName
 data DocNameI
 
 type instance IdP DocNameI = DocName
-
+type instance RdrOrSeName DocNameI = RdrName
 
 instance NamedThing DocName where
   getName (Documented name _) = name
